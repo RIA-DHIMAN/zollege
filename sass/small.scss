@@ -1,10 +1,14 @@
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
   * {
     color: black;
     width: 100%;
     padding: 0%;
     box-sizing: border-box;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+
+  #scroll-buttons {
+    display: block;
   }
 
   .owner {
@@ -94,7 +98,7 @@
     }
   }
   .again {
-    display: block !important;
+    display: block;
   }
   #search-btn-c {
     margin: 5px;
@@ -141,7 +145,7 @@
   .btn-slide {
     height: 2px;
     cursor: pointer;
-    color: rgb(26 24 62);
+    color: rgb(26, 24, 62);
     font-weight: bold;
     border-radius: 60px;
     flex: 1;
@@ -261,7 +265,7 @@
   .btn-slide {
     height: 2px;
     cursor: pointer;
-    color: rgb(26 24 62);
+    color: rgb(26, 24, 62);
     font-weight: bold;
     border-radius: 60px;
     flex: 1;

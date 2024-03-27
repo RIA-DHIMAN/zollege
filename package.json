@@ -1,0 +1,15 @@
+{
+  "name": "zollege",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "sass sass/main.scss my-style.css -w"
+  },
+  "author": "RIA DHIMAN",
+  "license": "ISC",
+  "dependencies": {
+    "node": "^18.20.0",
+    "sass": "^1.72.0"
+  }
+}

@@ -5,11 +5,10 @@
     padding: 0%;
     box-sizing: border-box;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; }
-  #scroll-buttons {
-    display: block; }
   .owner {
     display: none; }
   #search-a {
+    display: none;
     border-radius: 30px;
     width: 285px; }
   .block-2 {
@@ -24,6 +23,7 @@
     border-radius: 30px;
     width: 290px; }
   #search-btn-a {
+    display: none;
     margin: 5px;
     width: 167px;
     margin-left: 0px;
@@ -54,7 +54,12 @@
   .s-btn {
     display: none; }
   .text {
-    padding: 0px 131px 16px 0px; }
+    display: block !important;
+    padding: 23px 131px 16px 38px !important; }
+  .hidden {
+    display: block !important; }
+  .again {
+    display: block !important; }
   #scroll-buttons .button-work .button-written .button-set .button-list {
     width: 80vw;
     overflow-x: scroll;
@@ -83,8 +88,17 @@
     margin-left: -80px;
     display: flex; }
   .News {
+    display: block !important;
     padding: 6px;
     width: 331px; }
+  .quality {
+    margin: 5px;
+    margin-left: 0px;
+    padding: 6px;
+    border-radius: 30px;
+    background-color: #f5f1e6;
+    color: black;
+    transition: 0.6s; }
   .center-b {
     margin: 20px;
     text-align: center;
@@ -142,6 +156,10 @@
     transform: translateX(-100%); }
   #slide3:checked ~ .slides {
     transform: translateX(-200%); }
+  #College {
+    box-shadow: 0px 0px 4px grey;
+    height: 128px;
+    border-radius: 9px; }
   .card-img {
     height: 200px;
     box-shadow: 0px 0px 16px grey; }
@@ -170,20 +188,43 @@
     box-shadow: 0px 0px 3px grey;
     transform: scale(1.06);
     transition: 0.6s; }
-  #show-img {
-    height: 150px;
-    width: 150px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 20px #5e5c5c;
-    transition: 0.6s; }
-  #show-img:hover {
+  #search-btn-m {
+    margin: 5px;
+    width: 167px;
+    margin-left: 197px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #ccc8c8;
+    color: black;
+    transition: 0.6s;
+    box-shadow: 0px 0px 6px black; }
+  #search-btn-m:hover {
+    background-color: #e7dfdf;
+    box-shadow: 0px 0px 3px grey;
     transform: scale(1.06);
     transition: 0.6s; }
+  .exam-list {
+    box-shadow: 0px 0px 4px grey;
+    background-color: #ccc;
+    padding: 30px; }
+  #went {
+    margin-left: 8px;
+    width: 30px; }
+  #show-img {
+    height: 150px !important;
+    width: 150px !important;
+    border-radius: 8px !important;
+    box-shadow: 0px 0px 20px #5e5c5c !important;
+    transition: 0.6s !important; }
+  #show-img:hover {
+    transform: scale(1.06) !important;
+    transition: 0.6s !important; }
   #a {
-    margin-left: 3px;
-    margin-top: 25px; }
+    margin-left: 3px !important;
+    margin-top: 25px !important; }
   .block-4 {
-    margin-top: 43px; }
+    display: none !important;
+    margin-top: 43px !important; }
   .block-5 {
     display: none; }
   .block-7 {
@@ -263,19 +304,29 @@
     box-shadow: 0px 0px 3px grey;
     transform: scale(1.06);
     transition: 0.6s; }
-  #show-img {
-    height: 150px;
-    width: 150px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 20px #5e5c5c;
-    transition: 0.6s; }
-  #show-img:hover {
-    transform: scale(1.06);
-    transition: 0.6s; }
+  .onmobile {
+    display: block !important; }
   .block-6 {
+    display: none;
     margin-top: -10px;
     color: black;
     padding: 30px; }
+    .block-6 .row {
+      display: none !important; }
+  .exam {
+    width: 103vw; }
+  #one {
+    text-align: left;
+    margin: 10px;
+    border-radius: 20px;
+    column-gap: 3px;
+    box-shadow: 0px 0px 3px grey;
+    margin-left: 10px;
+    padding: 15px;
+    width: 103vw; }
+  .ex-img {
+    border-radius: 20px;
+    height: 72px; }
   .buttons {
     margin: -18px;
     padding: 65px;
@@ -362,14 +413,24 @@
     font-weight: bolder;
     font-size: 30px; }
   .owner-2 {
-    display: contents;
+    display: block !important;
     float: inline-end;
     border-radius: 50%;
     height: 41px;
     padding: 2px;
     width: 56px;
     box-shadow: 0px 0px 3px grey;
-    transform: scale(1.06); } }
+    transform: scale(1.06); }
+  .block-3 {
+    display: none !important; }
+  .hide-search {
+    margin-left: 4px;
+    padding: 4px;
+    text-align: center;
+    display: block !important; }
+  #search-2 {
+    border-radius: 30px;
+    width: 354px !important; } }
 
 * {
   color: black;
@@ -377,6 +438,9 @@
   padding: 0%;
   box-sizing: border-box;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; }
+
+.block-3 {
+  display: block; }
 
 .owner {
   border-radius: 50%;
@@ -389,6 +453,12 @@
 #search-a {
   border-radius: 30px;
   width: 285px; }
+
+.hide-search {
+  display: none; }
+
+.again {
+  display: none; }
 
 .block-2 {
   padding: 10px; }
@@ -441,7 +511,11 @@
   display: none; }
 
 .text {
+  display: none;
   padding: 0px 131px 16px 0px; }
+
+.hidden {
+  display: none; }
 
 #scroll-buttons .button-work .button-written .button-set .button-list {
   width: 80vw;
@@ -471,6 +545,7 @@
   display: flex; }
 
 .News {
+  display: none;
   padding: 6px;
   width: 331px; }
 
@@ -593,6 +668,7 @@ input[type="radio"] {
   margin-top: 25px; }
 
 .block-4 {
+  display: block;
   margin-top: 43px; }
 
 .block-5 {
@@ -688,16 +764,8 @@ input[type="radio"] {
   transform: scale(1.06);
   transition: 0.6s; }
 
-#show-img {
-  height: 150px;
-  width: 150px;
-  border-radius: 8px;
-  box-shadow: 0px 0px 20px #5e5c5c;
-  transition: 0.6s; }
-
-#show-img:hover {
-  transform: scale(1.06);
-  transition: 0.6s; }
+.onmobile {
+  display: none; }
 
 .block-6 {
   margin-top: -10px;
@@ -805,10 +873,10 @@ input[type="radio"] {
 
 .overlay {
   position: absolute;
-  top: 50%;
+  top: 63%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 8px;
+  padding: 64px;
   text-align: left; }
 
 .overlay h2 {
@@ -823,7 +891,7 @@ input[type="radio"] {
   font-size: 30px; }
 
 .owner-2 {
-  display: contents;
+  display: none;
   float: inline-end;
   border-radius: 50%;
   height: 41px;
@@ -831,7 +899,3 @@ input[type="radio"] {
   width: 56px;
   box-shadow: 0px 0px 3px grey;
   transform: scale(1.06); }
-
-@media screen and (min-width: 480px) {
-  #scroll-buttons {
-    display: none; } }
